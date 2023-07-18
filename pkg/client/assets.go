@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/fbsobreira/gotron-sdk/pkg/common"
-	"github.com/fbsobreira/gotron-sdk/pkg/proto/api"
-	"github.com/fbsobreira/gotron-sdk/pkg/proto/core"
+	"github.com/camel98/gotron-sdk/pkg/common"
+	"github.com/camel98/gotron-sdk/pkg/proto/api"
+	"github.com/camel98/gotron-sdk/pkg/proto/core"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -127,7 +127,7 @@ func (g *GrpcClient) AssetIssue(from, name, description, abbr, urlStr string,
 			return nil, fmt.Errorf("create asset issue error: convert error: %v", err)
 		}
 		assetIssueContractFrozenSupply := new(core.
-			AssetIssueContract_FrozenSupply)
+		AssetIssueContract_FrozenSupply)
 		assetIssueContractFrozenSupply.FrozenAmount = amount
 		assetIssueContractFrozenSupply.FrozenDays = days
 		// add supply to contract
