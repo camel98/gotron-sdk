@@ -65,6 +65,10 @@ func (g *GrpcClient) SetAPIKey(apiKey string) error {
 	return nil
 }
 
+func (g *GrpcClient) IsNewApiKey(apiKey string) bool {
+	return g.apiKey != apiKey
+}
+
 func (g *GrpcClient) getContext() (context.Context, context.CancelFunc) {
 	ctx, cancel := context.WithTimeout(context.Background(), g.grpcTimeout)
 	if len(g.apiKey) > 0 {
