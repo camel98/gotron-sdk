@@ -2,7 +2,7 @@ package keys
 
 import (
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/camel98/go-ethereum/common/hexutil"
 )
 
 type Dump struct {
