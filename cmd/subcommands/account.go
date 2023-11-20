@@ -703,6 +703,6 @@ func init() {
 		},
 	}
 
-	cmdAccount.AddCommand(accountSub()...)
+	//cmdAccount.AddCommand(accountSub()...)
 	RootCmd.AddCommand(cmdAccount)
 }
