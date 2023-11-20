@@ -175,7 +175,7 @@ func UnmarshalPublic(pbk []byte) (*ecdsa.PublicKey, error) {
 	return &ecdsa.PublicKey{Curve: crypto.S256(), X: x, Y: y}, nil
 }
 
-func RecoverPubkey(hash []byte, signature []byte) (address.Address, error) {
+func RecoverPubKey(hash []byte, signature []byte) (address.Address, error) {
 
 	if signature[64] >= 27 {
 		signature[64] -= 27

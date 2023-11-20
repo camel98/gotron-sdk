@@ -672,7 +672,7 @@ func accountSub() []*cobra.Command {
 				return err
 			}
 
-			addr, err := keystore.RecoverPubkey(hash, signature)
+			addr, err := keystore.RecoverPubKey(hash, signature)
 			if err != nil {
 				return err
 			}
