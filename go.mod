@@ -5,8 +5,8 @@ go 1.19
 require (
 	github.com/araddon/dateparse v0.0.0-20200409225146-d820a6159ab1
 	github.com/btcsuite/btcd/btcec/v2 v2.2.0
-	github.com/camel98/go-ethereum v0.0.0-20230724100245-bcfa60c39b03
 	github.com/deckarep/golang-set v1.8.0
+	github.com/ethereum/go-ethereum v1.10.14
 	github.com/fatih/color v1.9.0
 	github.com/fatih/structs v1.1.0
 	github.com/mitchellh/go-homedir v1.1.0
@@ -27,6 +27,7 @@ require (
 )
 
 require (
+	github.com/btcsuite/btcd v0.20.1-beta // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.0.1 // indirect

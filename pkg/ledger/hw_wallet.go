@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/camel98/go-ethereum/crypto"
+	"github.com/ethereum/go-ethereum/crypto"
 )
 
 var (
