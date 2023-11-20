@@ -665,17 +665,17 @@ func accountSub() []*cobra.Command {
 			}
 
 			// compute message hash
-			hash := keystore.TextHash(message, useFixedLength)
-			signature, err := hex.DecodeString(args[1])
-			if err != nil {
-				fmt.Println("Invalid signature")
-				return err
-			}
+			//hash := keystore.TextHash(message, useFixedLength)
+			//signature, err := hex.DecodeString(args[1])
+			//if err != nil {
+			//	fmt.Println("Invalid signature")
+			//	return err
+			//}
 
-			addr, err := keystore.RecoverPubKey(hash, signature)
-			if err != nil {
-				return err
-			}
+			//addr, err := keystore.RecoverPubKey(hash, signature)
+			//if err != nil {
+			//	return err
+			//}
 
 			result := make(map[string]interface{})
 			result["Message"] = args[0]
