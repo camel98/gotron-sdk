@@ -33,10 +33,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/camel98/go-ethereum/crypto"
+	"github.com/camel98/go-ethereum/event"
 	"github.com/camel98/gotron-sdk/pkg/address"
 	"github.com/camel98/gotron-sdk/pkg/proto/core"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/event"
 	"google.golang.org/protobuf/proto"
 )
 

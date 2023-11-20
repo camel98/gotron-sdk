@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/camel98/go-ethereum/crypto"
 )
 
 var (
@@ -41,7 +41,7 @@ func GetAddress() string {
 	return addr
 }
 
-//ProcessAddressCommand list the address associated with Ledger Nano S
+// ProcessAddressCommand list the address associated with Ledger Nano S
 func ProcessAddressCommand() {
 	n := getLedger()
 	addr, err := n.GetAddress()

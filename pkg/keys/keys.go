@@ -9,7 +9,7 @@ import (
 	"github.com/camel98/gotron-sdk/pkg/address"
 	"github.com/camel98/gotron-sdk/pkg/keystore"
 
-	// "github.com/ethereum/go-ethereum/crypto"
+	// "github.com/camel98/go-ethereum/crypto"
 
 	homedir "github.com/mitchellh/go-homedir"
 )
