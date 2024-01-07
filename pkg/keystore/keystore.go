@@ -26,6 +26,7 @@ import (
 	crand "crypto/rand"
 	"crypto/sha256"
 	"errors"
+	"fmt"
 	"os"
 	"path/filepath"
 	"reflect"
@@ -331,6 +332,9 @@ func (ks *KeyStore) SignTxWithPassphrase(a Account, passphrase string, tx *core.
 	if err != nil {
 		return nil, err
 	}
+	fmt.Printf("tx: %+v\n", tx)
+	fmt.Printf("tx.Signature: %+v\n", tx.Signature)
+	fmt.Printf("signature: %+v\n", signature)
 	tx.Signature = append(tx.Signature, signature)
 	return tx, nil
 }
